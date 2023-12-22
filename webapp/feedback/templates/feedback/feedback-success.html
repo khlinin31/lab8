@@ -1,0 +1,10 @@
+{% extends 'bar/layout.html' %}
+
+{% block title %}Форма отправлена{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <p>Спасибо, что уделили время!</p>
+        <h3><a href="{% url 'home' %}">Вернуться на главную</a></h3>
+    </div>
+{% endblock %}

@@ -1,0 +1,107 @@
+body {
+    background-color: #5cdb95;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    color: #edf5e1;
+    font-size: 18px;
+}
+
+a {
+    color: #edf5e1;
+    display: block;
+    transition: transform 0.512s ease;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #620CAC;
+    transform: scale(1.05);
+}
+
+h1, h3, span {
+    color: #edf5e1;
+}
+
+aside {
+    float: right;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    padding: 2.5%;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    padding: 2.5%;
+    color: #000000;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weigh: bold;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul a, aside ul li {
+    color: #edf5e1;
+    display: block;
+    margin-top: 20px;
+    transition: transform 0.512s ease;
+    text-decoration: none;
+}
+
+aside ul a:hover, aside ul li:hover{
+    color: #620CAC;
+    transform: scale(1.05);
+}
+
+main {
+	float: left;
+	width: 75%;
+}
+
+main .features {
+    float: right;
+    color: #edf5e1;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {
+    font-size: 50px;
+}
+
+main .features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+main .required-star {
+    color: #edf5e1;
+}

@@ -1,0 +1,30 @@
+{% extends 'bar/layout.html' %}
+{% load static %}
+{% block title %}Страница обратной связи{% endblock %}
+{% block content %}
+<form class="form" action="{% url 'feedback-success' %}" method="POST">
+    {% csrf_token %}
+    <div class="features">
+    <h1>Feedback</h1>
+            <form onsubmit="return validateForm()">
+                <label for="first_name">Имя: </label>
+                <input type="text" id="first_name" name="first_name" required><br><br>
+
+                <label for="last_name">Фамилия:</label>
+                <input type="text" id="last_name" name="last_name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label>Рейтинг:</label><br>
+                <input type="radio" name="rating" value="1" required> 1
+                <input type="radio" name="rating" value="2"> 2
+                <input type="radio" name="rating" value="3"> 3
+                <input type="radio" name="rating" value="4"> 4
+                <input type="radio" name="rating" value="5"> 5<br>
+
+                <button class="form__button" type="submit">Отправить</button>
+            </form>
+    </div>
+</form>
+{% endblock %}
